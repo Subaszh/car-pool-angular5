@@ -1,11 +1,10 @@
-<section class="lgn-sec">
-  <form class="lgn-form" #lgnForm="ngForm">
+<section class="fm-con">
+  <form class="lgn-form fm" #lgnForm="ngForm" novalidate>
 
     <div class="form-group">
       <label for="username">User Name</label>
-      <input type="text" [(ngModel)]="user.name" class="form-control" name="username" id="username" required>
+      <input type="text" [(ngModel)]="user.name" class="form-control" name="username" id="username" minlength="6" required #name="ngModel">
     </div>
-
     <div class="form-group">
       <label for="password">Password</label>
       <input type="password" class="form-control" [(ngModel)]="user.pass" name="password" id="password" required>
@@ -16,4 +15,5 @@
     </div>
 
   </form>
+
 </section>

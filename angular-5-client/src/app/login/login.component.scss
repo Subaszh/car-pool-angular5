@@ -1,11 +1,11 @@
-.lgn-sec {
+.fm-con {
   height: 300px;
   width: 500px;
   margin: 100px auto;
   border: 1px solid black;
 }
 
-.lgn-form {
+.fm {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -14,7 +14,7 @@
 }
 
 .form-group {
-  height: 80px;
+  height: 60px;
   label {
     display: block;
   }

@@ -1,3 +1,39 @@
-<p>
-  register works!
-</p>
+<section class="fm-con">
+  <form class="reg-form fm" #regForm="ngForm" novalidate>
+
+    <div class="form-group">
+      <label for="username">Full Name</label>
+      <input type="text" [(ngModel)]="newUser.name" class="form-control" name="username" id="username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" [(ngModel)]="newUser.email" class="form-control" name="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile Number</label>
+      <input type="text" [(ngModel)]="newUser.mobile" class="form-control" name="mobile" id="mobile" required>
+    </div>
+
+    <div class="form-group">
+      <label for="preferredCar">Preferred Car</label>
+      <input type="text" [(ngModel)]="newUser.preferredCar" class="form-control" name="preferredCar" id="preferredCar" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Re-Enter Password</label>
+      <input type="password" class="form-control" [(ngModel)]="newUser.pass" name="password" id="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password_d">Password</label>
+      <input type="password_d" class="form-control" [(ngModel)]="newUser.pass_d" name="password_d" id="password_d" required>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-success" class="form-submit">Register</button>
+    </div>
+
+  </form>
+</section>
