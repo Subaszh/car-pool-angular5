@@ -1,3 +1,25 @@
-<p>
-  car-find works!
-</p>
+<section>
+  <agm-map class="mp-hldr" [zoom]="zoom" [latitude]="mapCenter.lat" [longitude]="mapCenter.lng"></agm-map>
+  <form (ngSubmit)="findRiders()">
+    <div class="form-group">
+      <label for="src">Source</label>
+      <select name="src" id="src" [(ngModel)]="source">
+        <option *ngFor="let place of places" [ngValue]="place">{{place}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dest">Destination</label>
+      <select name="dest" id="dest" [(ngModel)]="destination">
+        <option *ngFor="let place of places" [ngValue]="place">{{place}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" [disabled]="source === destination" />
+    </div>
+
+  </form>
+  <div *ngIf="riders.length > 0">
+    <div *ngFor="let rider of riders"> {{rider.name}}</div>
+  </div>
+</section>
