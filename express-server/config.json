@@ -1,0 +1,6 @@
+{
+  "port": 4000,
+  "client": {
+    "ip": "http://localhost:4200"
+  }
+}
