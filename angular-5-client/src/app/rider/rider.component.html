@@ -1,0 +1,39 @@
+<div class="rider-card">
+  <div class="img-con rider-div">
+    <div class="img-hldr">
+      <i class="material-icons">person_outline</i>
+    </div>
+  </div>
+  <div class="detail-con rider-div">
+    <p class="r-name r-p">{{rider.name}}&nbsp;
+      <span class="r-time">{{rider.time}} mins away</span>
+    </p>
+    <p class="r-route r-p">
+      <span class="bold">
+        {{rider.routes[0]}}
+      </span>
+      <span class="sec-color"> to </span>
+      <span class="bold">
+        {{rider.routes[rider.routes.length-1]}}
+      </span>
+    </p>
+    <p class="r-car r-p">
+      Car:
+      <span class="bold">{{rider.ride}}</span>&nbsp;&nbsp; Seats Left:
+      <span class="r-rating bold">{{rider.seats.available}}</span>
+    </p>
+  </div>
+  <div class="mk-con rider-div">
+    <div class="ratin-hldr">
+      <span class="r-rating">{{rider.rating}}</span>
+      <div class="bar"></div>
+      <span class="ptr" (click)="rider.fav = !rider.fav">
+        <i class="material-icons" *ngIf="!rider.fav">star_border</i>
+        <i class=" r-fav material-icons" *ngIf="rider.fav">star</i>
+      </span>
+    </div>
+    <div class="selection-holder">
+      <button class="confirm-btn ptr" (click)="selectRider()">RIDE</button>
+    </div>
+  </div>
+</div>

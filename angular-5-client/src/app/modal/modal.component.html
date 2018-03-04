@@ -1,0 +1,13 @@
+<div class="modal-con" *ngIf="show">
+  <div class="modal">
+    <header class="modal-header">
+      <div class="left">{{title}}</div>
+      <div class="right">
+        <i class="material-icons close-icon" (click)="closeModal()">clear</i>
+      </div>
+    </header>
+    <div class="modal-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

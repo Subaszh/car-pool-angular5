@@ -1,0 +1,51 @@
+$primary-font-color: white;
+@mixin c-align-xy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-bar {
+  height: 50px;
+  color: $primary-font-color;
+  position: static;
+  top: 0px;
+  width: 100%;
+  background: #333;
+}
+
+.nav-title {
+  letter-spacing: 5px;
+  font-size: 24px;
+  line-height: 50px;
+  margin: 0 15px;
+  float: left;
+}
+
+.nav-profile {
+  font-size: 20px;
+  position: relative;
+  float: right;
+}
+
+.profile-name {
+  right: 60px;
+  line-height: 50px;
+  position: absolute;
+}
+
+.profile-icon {
+  height: 30px;
+  width: 30px;
+  border: 1px solid $primary-font-color;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  i {
+    @include c-align-xy();
+  }
+}

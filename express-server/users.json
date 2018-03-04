@@ -1,0 +1,59 @@
+[
+  {
+    "fullName": "Spiderman",
+    "password": "peterparker",
+    "mobile": "1111111111",
+    "email": "spidey@m.com"
+  },
+  {
+    "fullName": "Ironman",
+    "password": "tonystark",
+    "mobile": "2222222222",
+    "email": "iron@m.com"
+  },
+  {
+    "fullName": "Hulk",
+    "password": "brucebanner",
+    "mobile": "33333333333",
+    "email": "hulk@m.com"
+  },
+  {
+    "fullName": "Hawkeye",
+    "password": "clintbarton",
+    "mobile": "4444444444",
+    "email": "hawk@m.com"
+  },
+  {
+    "fullName": "admin",
+    "password": "password",
+    "mobile": "5555555555",
+    "email": "admin@m.com"
+  },
+  {
+    "fullName": "Wonder Woman",
+    "password": "diana",
+    "mobile": "6666666666",
+    "email": "wwoman@m.com"
+  },
+  {
+    "fullName": "Subash",
+    "email": "admin1@gmail.com",
+    "mobile": "8015555296",
+    "password": "12345",
+    "password_d": "12345"
+  },
+  {
+    "fullName": "Test12",
+    "email": "s@m.com",
+    "mobile": "7899127659",
+    "password": "1234",
+    "password_d": "1234"
+  },
+  {
+    "fullName": "Test123",
+    "email": "a@m.com",
+    "mobile": "8091111988",
+    "password": "1234",
+    "password_d": "1234"
+  }
+]

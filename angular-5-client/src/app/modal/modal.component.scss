@@ -1,0 +1,48 @@
+.modal-con {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 300px;
+  min-height: 75px;
+  padding: 6px 12px;
+  z-index: 101;
+  background: white;
+  border-radius: 3px;
+}
+
+.modal-header {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.modal-body {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.left {
+  float: left;
+  color: #555;
+}
+
+.right {
+  float: right;
+  i {
+    margin: 4px 0;
+  }
+}
+
+.close-icon {
+  cursor: pointer;
+}
