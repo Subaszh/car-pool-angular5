@@ -1,19 +1,32 @@
 <section class="fm-con">
-  <form class="lgn-form fm" #lgnForm="ngForm" novalidate>
+  <form class="lgn-form fm" [ngFormOptions]="{updateOn: 'submit'}" (ngSubmit)="login()" #lgnForm="ngForm" novalidate>
+    <h1 class="app-title">ZEPPELIN</h1>
 
     <div class="form-group">
-      <label for="username">User Name</label>
-      <input type="text" [(ngModel)]="user.name" class="form-control" name="username" id="username" minlength="6" required #name="ngModel">
+      <input type="email" [(ngModel)]="user.email" email add-empty-class class="form-control" name="email" id="email" #email="ngModel"
+        required>
+      <label for="email">Enter Mail Id </label>
+      <span class="bar"></span>
+      <span *ngIf="email.errors?.email && email.dirty && user.email.length" class="err-msg">* Invalid Email Id</span>
     </div>
+
     <div class="form-group">
+      <input type="password" add-empty-class class="form-control" [(ngModel)]="user.password" name="password" id="password" #password="ngModel"
+        required>
       <label for="password">Password</label>
-      <input type="password" class="form-control" [(ngModel)]="user.pass" name="password" id="password" required>
+      <span class="bar"></span>
     </div>
 
     <div class="form-group">
-      <button type="submit" class="btn btn-success" class="form-submit">Login</button>
+      <button class="btn btn-success" class="form-submit">LOGIN</button>
+      <p class="err-msg">{{loginValidation}}</p>
     </div>
 
+    <div class="guide-txt">
+      Click here to
+      <a routerLink="/register">
+        REGISTER
+      </a>
+    </div>
   </form>
-
 </section>

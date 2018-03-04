@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
+import { Router, RouterLink } from '@angular/router';
+import { ProfileService } from '../profile.service';
 
 @Component({
   selector: 'app-login',
@@ -7,18 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   user = {
-    name: '',
-    pass: ''
+    email: '',
+    password: ''
   }
+  loginValidation = '';
 
-  constructor() {
+  constructor(private http: HttpService, private router: Router, private profile: ProfileService) {
   }
 
   ngOnInit() {
   }
 
-  print(a) {
-    console.log(a);
+  login() {
+    this.http.login(this.user)
+      .subscribe((res: any) => {
+        if (res.status === 'ok') {
+          this.profile.info = res.user;
+          this.router.navigate(['search']);
+        } else {
+          this.loginValidation = "* Unable to login with Email/Password";
+        }
+      })
   }
 
 }

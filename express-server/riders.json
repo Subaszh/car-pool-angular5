@@ -2,72 +2,180 @@
     "name": "Peter Parker",
     "ride": "Mercedes AMG",
     "rating": 4.3,
-    "routes": ["Marthahalli", "Old Madras Road", "MG Road", "Malleshwaram"]
+    "routes": ["Marthahalli", "Old Madras Road", "MG Road", "Malleshwaram"],
+    "time": "4",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    }
   },
   {
     "name": "Bruce Wayne",
     "ride": "Lamborgini Gallardo",
     "rating": 4.75,
-    "routes": ["Indira Nagar", "Marthahalli", "Bellandur", "Silkboard", "Electronic City"]
+    "routes": ["Indira Nagar", "Marthahalli", "Bellandur", "Silkboard", "Electronic City"],
+    "time": "4",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.95,
+      "longitude": 77.12
+    }
   },
   {
     "name": "Alfred",
     "ride": "Ford Mustang",
     "rating": 4.35,
-    "routes": ["Electronic City", "Silkboard", "Bellandur", "Marthahalli", "Indira Nagar"]
+    "routes": ["Electronic City", "Silkboard", "Bellandur", "Marthahalli", "Indira Nagar"],
+    "time": "4",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9511,
+      "longitude": 77.5921
+    }
   },
   {
     "name": "Bruce Banner",
     "ride": "Mercedes A class",
     "rating": 4.9,
-    "routes": ["MG Road", "Old Madras Road", "Whitefield"]
+    "routes": ["MG Road", "Old Madras Road", "Whitefield"],
+    "time": "4",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9432,
+      "longitude": 77.6511
+    }
   },
   {
     "name": "Diana",
-    "ride": "Aston Martin Vantage",
+    "ride": "Aston Martin",
     "rating": 4.2,
-    "routes": ["Marthahalli", "Silkboard", "Madiwala", "Shanthi Nagar"]
+    "routes": ["Marthahalli", "Silkboard", "Madiwala", "Shanthi Nagar"],
+    "time": "6",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9787,
+      "longitude": 77.5698
+    }
   },
   {
     "name": "Clarke Kent",
     "ride": "Tesla III",
     "rating": 3.3,
-    "routes": ["Bellandur", "Silkboard", "Banashankari", "Raja Rajeshwari Nagar"]
+    "routes": ["Bellandur", "Silkboard", "Banashankari", "Raja Rajeshwari Nagar"],
+    "time": "14",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.8709,
+      "longitude": 77.45
+    }
   },
   {
     "name": "Mary Jane",
-    "ride": "Aston Martin Vantage",
+    "ride": "Aston Martin",
     "rating": 4.2,
-    "routes": ["Marthahalli", "Silkboard", "Madiwala", "Shanthi Nagar", "MG Road"]
+    "routes": ["Marthahalli", "Silkboard", "Madiwala", "Shanthi Nagar", "MG Road"],
+    "time": "4",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9642,
+      "longitude": 78.112
+    }
   },
   {
     "name": "Pepper Potts",
     "ride": "Audi R8",
     "rating": 4.25,
-    "routes": ["Indira Nagar", "MG Road", "Old Madras Road", "Whitefield"]
+    "routes": ["Indira Nagar", "MG Road", "Old Madras Road", "Whitefield"],
+    "time": "40",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9456,
+      "longitude": 77.6012
+    }
   },
   {
     "name": "Bucky Barnes",
     "ride": "Mercedes A class",
     "rating": 4.0,
-    "routes": ["Majestic", "MG Road", "Old Madras Road", "Whitefield"]
+    "routes": ["Majestic", "MG Road", "Old Madras Road", "Whitefield"],
+    "time": "4",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9564,
+      "longitude": 77.56
+    }
   },
   {
     "name": "Barry Allen",
     "ride": "Ferrari Spider",
     "rating": 4.95,
-    "routes": ["Malleshwaram", "Majestic", "MG Road", "Old Madras Road", "Whitefield"]
+    "routes": ["Malleshwaram", "Majestic", "MG Road", "Old Madras Road", "Whitefield"],
+    "time": "0.2",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9653,
+      "longitude": 77.654
+    }
   },
   {
     "name": "Natasha",
     "ride": "Audi A6",
     "rating": 4.5,
-    "routes": ["MG Road", "Koramangala", "Madiwala", "Electronic City"]
+    "routes": ["MG Road", "Koramangala", "Madiwala", "Electronic City"],
+    "time": "1",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 13.0111,
+      "longitude": 76.90
+    }
   },
   {
     "name": "Tony Stark",
     "ride": "Mercedes C class",
     "rating": 4.25,
-    "routes": ["Indira Nagar", "MG Road", "Old Madras Road", "Whitefield"]
+    "routes": ["Indira Nagar", "MG Road", "Old Madras Road", "Whitefield"],
+    "time": "1",
+    "seats": {
+      "total": 3,
+      "available": 2
+    },
+    "location": {
+      "latitude": 12.9487,
+      "longitude": 77.676
+    }
   }
 ]

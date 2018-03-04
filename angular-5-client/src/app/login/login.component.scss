@@ -1,21 +1,128 @@
+$primary-font-color:#555;
+$secondary-font-color: #ccc;
+@mixin c-align-xy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .fm-con {
   height: 300px;
-  width: 500px;
-  margin: 100px auto;
-  border: 1px solid black;
+  width: 400px;
+  background: white;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  @include c-align-xy();
 }
 
 .fm {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  @include c-align-xy();
+}
+
+.app-title {
+  text-align: center;
+  margin: 0 0 40px 0;
+  height: 50px;
+  font: 600 24px/50px roboto-thin;
+  letter-spacing: 6px;
 }
 
 .form-group {
-  height: 60px;
+  width: 300px;
+  position: relative;
+  margin-bottom: 30px;
   label {
     display: block;
+    position: absolute;
+    color: $secondary-font-color;
+    font-size: 12px;
+    left: 5px;
+    top: 6px;
+    transition: 0.1s ease all;
+  }
+}
+
+.form-submit {
+  border-radius: 3px;
+  background: $primary-font-color;
+  border: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  height: 40px;
+  font: normal 14px roboto;
+  letter-spacing: 2px;
+  margin: 5px auto;
+  width: 150px;
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease all;
+  }
+  &:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  &+.err-msg {
+    bottom: -25px;
+  }
+}
+
+.form-control {
+  border: 0px;
+  border-bottom: 1px solid $secondary-font-color;
+  box-sizing: border-box;
+  color: $primary-font-color;
+  padding: 5px;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+  &.pull-up+label {
+    top: -12px;
+    font-size: 10px;
+    color: $primary-font-color;
+    transition: 0.16s ease all;
+  }
+  &:focus~.err-msg {
+    display: none;
+  }
+  &~.bar:after,
+  &~.bar:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    top: 27px;
+    display: inline-block;
+    transition: 0.15s ease all;
+    height: 2px;
+    background: $primary-font-color;
+  }
+  &:focus~.bar:after,
+  &:focus~.bar:before {
+    width: 50%;
+  }
+  &~.bar:before {
+    left: 50%;
+  }
+  &~.bar:after {
+    right: 50%;
+  }
+}
+
+.err-msg {
+  position: absolute;
+  bottom: -14px;
+  color: red;
+  font: normal 10px roboto;
+  font-style: italic;
+}
+
+.guide-txt {
+  position: relative;
+  bottom: 20px;
+  font-size: 12px;
+  a {
+    color: blue
   }
 }
