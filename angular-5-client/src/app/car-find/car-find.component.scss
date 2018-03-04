@@ -27,3 +27,67 @@ $secondary-font-color: #aaa;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.select-group {
+  width: 250px;
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  background: white;
+  margin: 5px 10px;
+  padding-left: 15px;
+  .dm-sl {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    &::after {
+      content: "\E313";
+      font-family: 'Material Icons';
+      color: black;
+      position: absolute;
+      right: 8px;
+      font-size: 24px;
+    }
+  }
+  .op-list {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background: white;
+    margin: 0;
+    padding: 0px;
+    height: 200px;
+    width: 100%;
+    overflow-y: scroll;
+    border: 1px solid #333;
+  }
+  .op-itm {
+    list-style: none;
+    padding: 8px 15px;
+    &:hover {
+      background: #eee;
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.display-n {
+  display: none;
+}
+
+.fm-submit {
+  background: #333;
+  height: 30px;
+  width: 100px;
+  -webkit-appearance: none;
+  border: 0;
+  color: white;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

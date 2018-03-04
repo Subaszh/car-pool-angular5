@@ -17,6 +17,7 @@ export class CarFindComponent implements OnInit {
   public showRideConfirmation: Boolean = false;
   public selectedRider = {};
   public riders = [];
+  public showSrcOp: boolean = false;
 
   constructor(private http: HttpService, private rideInfo: RiderInfoService) {
     this.mapCenter = {
