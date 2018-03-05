@@ -46,7 +46,14 @@
   </app-modal>
 
   <app-modal [(show)]="showOnNoRide" [title]="'Ride Search Info'">
-    No rides found from {{source}} to {{destination}}
+    No rides found from
+    <b>
+      {{source}}
+    </b>
+    to
+    <b>
+      {{destination}}
+    </b>
   </app-modal>
 
 </section>

@@ -91,4 +91,7 @@ $secondary-font-color: #aaa;
   &:active {
     outline: none;
   }
+  &:disabled {
+    background: #aaa;
+  }
 }
