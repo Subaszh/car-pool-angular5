@@ -15,6 +15,7 @@ export class CarFindComponent implements OnInit {
   public source: String;
   public destination: String;
   public showRideConfirmation: Boolean = false;
+  public showOnNoRide: Boolean = false;
   public selectedRider = {};
   public riders = [];
   public showSrcOp: boolean = false;
@@ -40,6 +41,9 @@ export class CarFindComponent implements OnInit {
       .subscribe((riders: any[]) => {
         this.riders.length = 0;
         this.riders.push.call(this.riders, ...riders);
+        if (riders.length === 0) {
+          this.showOnNoRide = true;
+        }
       });
   }
 

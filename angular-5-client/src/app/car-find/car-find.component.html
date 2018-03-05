@@ -29,7 +29,6 @@
       </div>
     </form>
   </div>
-  {{showSrcOp}}
 
   <div *ngIf="riders.length > 0" class="rider-con">
     <rider *ngFor="let rider of riders" [rider]="rider" [onRiderSelect]="confirmRider"></rider>
@@ -44,6 +43,10 @@
       <b>
         {{selectedRider.time}}
       </b> minutes away</span>
+  </app-modal>
+
+  <app-modal [(show)]="showOnNoRide" [title]="'Ride Search Info'">
+    No rides found from {{source}} to {{destination}}
   </app-modal>
 
 </section>
