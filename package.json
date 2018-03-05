@@ -1,0 +1,21 @@
+{
+  "name": "zeppelin",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd express-server && npm install && nohup node app.js &",
+    "client": "cd angular-5-client && npm install && ng serve -o",
+    "setup": "npm run server | npm run client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subaszh/car-pool-angular5.git"
+  },
+  "author": "Subash Chandran Thirumaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Subaszh/car-pool-angular5/issues"
+  },
+  "homepage": "https://github.com/Subaszh/car-pool-angular5#readme"
+}
