@@ -1,15 +1,15 @@
 $primary-font-color: #555;
 $secondary-font-color: #aaa;
 .mp-hldr {
-  width: 100%;
   height: 400px;
   position: relative;
+  width: 100%;
 }
 
 .cf-fm {
   position: absolute;
-  z-index: 10;
   top: 10px;
+  z-index: 10;
 }
 
 .form-group {
@@ -22,45 +22,45 @@ $secondary-font-color: #aaa;
 }
 
 .rider-con {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .select-group {
-  width: 250px;
-  position: relative;
+  background: white;
   display: inline-block;
   height: 30px;
   line-height: 30px;
-  background: white;
   margin: 5px 10px;
   padding-left: 15px;
+  position: relative;
+  width: 250px;
   .dm-sl {
     display: inline-block;
-    width: 100%;
     height: 100%;
+    width: 100%;
     &::after {
       content: "\E313";
-      font-family: 'Material Icons';
       color: black;
+      font-family: 'Material Icons';
+      font-size: 24px;
       position: absolute;
       right: 8px;
-      font-size: 24px;
     }
   }
   .op-list {
+    background: white;
+    border: 1px solid #333;
+    left: 0px;
+    height: 200px;
+    margin: 0;
+    overflow-y: scroll;
+    padding: 0px;
     position: absolute;
     top: 30px;
-    left: 0px;
-    background: white;
-    margin: 0;
-    padding: 0px;
-    height: 200px;
     width: 100%;
-    overflow-y: scroll;
-    border: 1px solid #333;
   }
   .op-itm {
     list-style: none;
@@ -81,12 +81,12 @@ $secondary-font-color: #aaa;
 
 .fm-submit {
   background: #333;
-  height: 30px;
-  width: 100px;
-  -webkit-appearance: none;
   border: 0;
   border-radius: 3px;
   color: white;
+  height: 30px;
+  width: 100px;
+  -webkit-appearance: none;
   &:focus,
   &:active {
     outline: none;
