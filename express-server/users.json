@@ -1,5 +1,4 @@
-[
-  {
+[{
     "fullName": "Spiderman",
     "password": "peterparker",
     "mobile": "1111111111",
@@ -34,26 +33,5 @@
     "password": "diana",
     "mobile": "6666666666",
     "email": "wwoman@m.com"
-  },
-  {
-    "fullName": "Subash",
-    "email": "admin1@gmail.com",
-    "mobile": "8015555296",
-    "password": "12345",
-    "password_d": "12345"
-  },
-  {
-    "fullName": "Test12",
-    "email": "s@m.com",
-    "mobile": "7899127659",
-    "password": "1234",
-    "password_d": "1234"
-  },
-  {
-    "fullName": "Test123",
-    "email": "a@m.com",
-    "mobile": "8091111988",
-    "password": "1234",
-    "password_d": "1234"
   }
 ]
